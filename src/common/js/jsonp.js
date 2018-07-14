@@ -15,7 +15,7 @@ export default function jspon(url, data, option) {
 
 function param(data) {
   let url = ''
-  for (var k in data) {
+  for (let k in data) {
     let value = data[k] !== undefined ? data[k] : ''
     url += `&${k}=${encodeURIComponent(value)}`
   }
